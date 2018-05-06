@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "validate-commit-message": "^3.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"init": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonjs/git-commit-valid.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "validate-commit-message": "^3.0.1"
-  }
+  "bugs": {
+    "url": "https://github.com/bonjs/git-commit-valid/issues"
+  },
+  "homepage": "https://github.com/bonjs/git-commit-valid#readme"
 }
