@@ -57,7 +57,7 @@ var error = function (msg, color) {
 
 var validateMessage = function () {
 	
-	var reg = /^PT[A-Z]{5}-\d{1,5}\s+.+-?.+/;
+	var reg = /^(?:Revert |PT[A-Z]{5}-\d{1,5}\s+).+/;
 	return function(message) {
 		return reg.test(message);
 	};
@@ -66,8 +66,4 @@ var validateMessage = function () {
 var firstLineFromBuffer = function (buffer) {
 	return buffer.toString().match(/.*/)[0];
 };
-
-// publish for testing
-exports.validateMessage = validateMessage;
-
 
